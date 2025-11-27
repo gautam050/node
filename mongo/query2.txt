@@ -1,0 +1,60 @@
+**1. Total amount spent by each customer**
+
+db.orders.aggregate([
+  {
+    $group: {
+      _id: "$customerId",
+      totalSpent: { $sum: "$amount" }
+    }
+  }
+])
+
+
+ **2. Order details with customer information**
+
+db.orders.aggregate([
+  {
+    $lookup: {
+      from: "customers",
+      localField: "customerId",
+      foreignField: "_id",
+      as: "customerInfo"
+    }
+  }
+])
+
+
+**3. Orders where amount > 500**
+
+db.orders.aggregate([
+  { $match: { amount: { $gt: 500 } } }
+])
+
+
+**4. Average order amount per customer**
+
+
+db.orders.aggregate([
+  {
+    $group: {
+      _id: "$customerId",
+      avgAmount: { $avg: "$amount" }
+    }
+  }
+])
+
+
+ **5. All orders with customer details (only if customer exists)**
+
+db.orders.aggregate([
+  {
+    $lookup: {
+      from: "customers",
+      localField: "customerId",
+      foreignField: "_id",
+      as: "customerInfo"
+    }
+  },
+  { $match: { customerInfo: { $ne: [] } } }
+])
+```
