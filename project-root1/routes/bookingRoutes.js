@@ -1,0 +1,14 @@
+const express = require("express");
+const router = express.Router();
+const bookingController = require("../controllers/bookingController");
+const authenticate = require("../middleware/authMiddleware");
+const { permit } = require("../middleware/roleMiddleware");
+router.use(authenticate);
+router.post("/", permit("user", "admin"), bookingController.createBooking);
+router.get("/", permit("user", "admin"), bookingController.getBookings);
+router.put("/:id", permit("user", "admin"), bookingController.updateBooking);
+router.delete("/:id", permit("user", "admin"), bookingController.cancelBooking);
+router.patch("/:id/approve", permit("admin"), bookingController.approveBooking);
+router.patch("/:id/reject", permit("admin"), bookingController.rejectBooking);
+router.delete("/:id/admin", permit("admin"), bookingController.deleteBooking);
+module.exports = router;
