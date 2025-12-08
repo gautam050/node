@@ -34,7 +34,6 @@ socket.on("connect", () => {
 });
 
 socket.on("history", (payload) => {
-  // payload: { room, history: [] }
   $messages.innerHTML = "";
   if (payload && payload.history) {
     payload.history.forEach(addMessage);
@@ -81,7 +80,6 @@ $disconnectBtn.onclick = () => {
   socket.disconnect();
   $chat.style.display = "none";
   $login.style.display = "block";
-  // to allow reconnecting in same tab, we reload
   setTimeout(() => location.reload(), 200);
 };
 
