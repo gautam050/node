@@ -1,0 +1,126 @@
+//  prompt1.md
+# Zero-Shot Prompt
+Create a 7-day budget-friendly travel itinerary covering Singapore and Malaysia. I prefer Indian cuisine, affordable hotels/hostels, and popular tourist attractions.
+
+# AI Response
+Day 1 (Singapore): Marina Bay Sands, Gardens by the Bay. Dinner at Kailash Parbat.
+Day 2: Sentosa Island, Siloso Beach. Stay at CapsulePod.
+Day 3: Little India, Mustafa Centre, Chinatown. Lunch at Komala Vilas.
+Day 4 (Malaysia – Kuala Lumpur): Petronas Towers, KLCC Park. Stay at Tune Hotel.
+Day 5: Batu Caves, Central Market. Dinner at Saravana Bhavan.
+Day 6 (Malacca): Dutch Square, Jonker Walk. Budget stay at Rucksack Inn.
+Day 7: Putrajaya, shopping, return travel.
+
+
+prompt2
+
+# Example
+Example workout: 10 push-ups, 15 squats, 20 jumping jacks.
+
+# One-Shot Prompt
+Using the example above as the format, create a 4-week beginner home muscle-building workout plan without equipment.
+
+# AI Response
+Week 1: Push-ups 10/day, Squats 15/day, Jumping jacks 20/day.
+Week 2: Push-ups 15/day, Squats 20/day, Lunges 10/day.
+Week 3: Push-ups 20/day, Squats 25/day, Plank 30 sec.
+Week 4: Push-ups 25/day, Squats 30/day, Plank 45 sec.
+
+
+Prompt3 
+
+# Few-Shot Prompt
+Based on the examples above, recommend 3 more mystery novels featuring strong female leads.
+
+# AI Response
+1. The Silent Patient – Alex Michaelides  
+2. The Guest List – Lucy Foley  
+3. Stillhouse Lake – Rachel Caine  
+
+prompt4
+# Prompt
+Act as my personal finance advisor. I want to save for a new car within 2 years. Build a simple savings plan with monthly targets.
+
+# AI Response
+Goal: ₹6,00,000 in 24 months  
+Monthly Saving Target: ₹25,000  
+Plan:  
+- 50% SIP  
+- 30% RD  
+- 20% emergency buffer  
+Adjust monthly based on expenses.
+
+
+prompt5
+# Prompt
+Explain step-by-step how to renovate a kitchen in modern style under a fixed budget. Show reasoning, cost breakdown, and affordable options.
+
+# AI Response
+1. Identify budget → assume ₹1,20,000.  
+2. Prioritize: cabinets, lighting, tiles.  
+3. Cost reasoning:  
+   - Cabinets: 40%  
+   - Tiles: 25%  
+   - Lights: 10%  
+4. Choose affordable materials like laminate, LED strips.  
+5. Final step: hire carpenter + painter.
+
+
+prompt6
+# Initial Prompt
+Summarize this blockchain article in simple terms.
+
+# Refinement Prompt
+Make it even simpler and add a small real-life analogy.
+
+# AI Response
+Simplified Summary: Blockchain is a shared digital record.  
+Analogy: Like a notebook everyone can see but no one can erase.
+
+prompt7
+# Prompt
+Create a weekly high-protein vegetarian diet plan in a table with columns: Meal, Calories, Protein.
+
+# AI Response
+| Meal        | Calories | Protein |
+|-------------|----------|---------|
+| Monday      | 500      | 25g     |
+| Tuesday     | 520      | 27g     |
+| Wednesday   | 480      | 24g     |
+| Thursday    | 510      | 26g     |
+| Friday      | 530      | 28g     |
+| Saturday    | 550      | 30g     |
+| Sunday      | 500      | 25g     |
+
+
+prompt8
+# Prompt
+Here is my React study plan: Components, Props, State, Hooks, Lifecycle, Routing. Critique and improve it.
+
+# AI Response
+Missing topics: Context API, Performance, Testing.  
+Improved Plan: Add useReducer, useMemo, useCallback, React patterns, mock interviews.
+
+
+prompt9
+# Prompt 1
+Create a basic care routine for a Labrador puppy.
+
+# AI Response 1
+Feeding: 3 meals/day.  
+Training: sit, stay, potty training.  
+Grooming: weekly brushing.
+
+# Prompt 2
+Make it more detailed.
+
+# AI Response 2
+Feeding: 8am, 1pm, 7pm.  
+Training: 15-min sessions twice/day.  
+Grooming: bath every 3 weeks.
+
+# Prompt 3
+Add a playtime schedule.
+
+# AI Response 3
+Playtime: 30 minutes morning, 20 minutes evening.
